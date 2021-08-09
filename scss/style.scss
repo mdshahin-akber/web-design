@@ -1,0 +1,13 @@
+$color: green;
+@use "src/use" as s;
+
+@mixin color-main {
+  background-color: $color;
+  padding: 10px, 20px;
+}
+
+body {
+  // @include s.bg;
+  @include color-main;
+
+}

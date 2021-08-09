@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scss format</title>
+  <style>
+    :root {
+      --bg-color : green;
+    }
+    body {
+      /* background-color: blue!important; */
+    }
+    nav {
+      background-color: gray;
+    }
+    span {
+      color: red;
+      background-color: var(--bg-color);
+    }
+    h2 {
+      background-color: greenyellow;
+    }
+    p{
+      background-color: hotpink;
+    }
+    a{
+      background-color: indigo;
+    }
+    section, div {
+      background-color: lightcoral;
+      /* padding: 1rem;
+      margin: 1rem; */
+      /* margin-top: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 1rem; */
+      /* margin: .65rem 2rem 3rem 4rem; */
+      /* margin: 2rem 3rem; */
+      /* margin: 1rem 2rem 3rem; */
+
+    }
+    div{
+      background-color: lightseagreen;
+    }
+    #main {
+      background-color: olivedrab;
+    }
+    .logo {
+      background-color: green;
+    }
+    .sub-logo {
+      background-color: yellow;
+      padding: 20px 10px;
+      border: 1px solid hsl(220, 100%, 50%, 23%);
+    }
+  </style>
+  
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body >
+  <section id="main">
+    <nav>
+      <div class="logo sub-logo">Site Logo</div>
+      <div class="nav-bar">
+        <span>Home</span>
+        <span>About</span>
+        <span>Contact</span>
+      </div>
+    </nav>
+    <button id='change-color'>Change color</button>
+    <h2>this is h2 tag</h2>
+    <span>this is span tag</span>
+    <h2>this ish2 in spam</h2>
+    <span>this is span tag 1</span>
+    <p>Lorem ipsum dolor sit amet,</p>
+    <a href="">nsaehofiehl</a>
+  </section>
+
+  <div>this is div</div>
+
+  <script>
+    const btn = document.getElementById('change-color')
+    // const poperty = 
+
+    btn.addEventListener('click', () => {
+      document.documentElement.style.setProperty('--bg-color', 'yellow')
+    })
+  </script>
+</body>
+</html>

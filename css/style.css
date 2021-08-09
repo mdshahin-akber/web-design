@@ -1,0 +1,4 @@
+@use "src/use" as s;
+body {
+  background-color: green;
+  padding: 10px, 20px; }
